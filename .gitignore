@@ -1,0 +1,42 @@
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+[Oo]bj/ # FlashDevelop obj
+[Bb]in/ # FlashDevelop bin
+
+# Other files and folders
+.settings/
+*.o
+*.out
+
+#idea IDE files
+.idea/
+data/
+target/
+project/
+*.iml
+.DS_Store
+.DS_Store?
+
+#python
+**/__pycache__/
+
+*.class
+#data set 
+MNIST-data/
+t10k-*
+train-*.gz
+text8.zip
+tsne.png
+inception5h.zip
+*.pb
+pilatus800.jpg
+.ipynb_checkpoints
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+*.pydevproject
