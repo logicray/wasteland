@@ -7,7 +7,7 @@ can not automatic expansion
 """
 
 
-class Stack():
+class Stack:
     def __init__(self, size):
         self.size = size
         self.stack = []
@@ -41,6 +41,10 @@ def main():
     try:
         stack = Stack(10)
         stack.push(1)
+        stack.push(2)
+        stack.push(3)
+        stack.show()
+        stack.pop()
         stack.show()
     except Exception as e:
         print(e)
