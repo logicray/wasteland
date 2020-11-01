@@ -1,1 +1,5 @@
 numpy
+torchvision
+torch
+sklearn
+tensorflow>1.12.1
