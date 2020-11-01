@@ -40,3 +40,6 @@ pilatus800.jpg
 *.ipa
 *.apk
 *.pydevproject
+
+
+.ipynb_checkpoints
