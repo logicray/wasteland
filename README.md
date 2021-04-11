@@ -1,2 +1,5 @@
-# cobra
-a python project of algorithm and data structure practise
+# playground
+a python project include 
+- alittle algorithm and data structure implements
+- deep learning
+- data visualization
