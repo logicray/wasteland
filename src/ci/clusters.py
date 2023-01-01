@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#LogicWang
+#logic-pw
 #2015.12.01
 from PIL import Image, ImageDraw
 from math import sqrt

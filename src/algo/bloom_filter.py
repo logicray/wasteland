@@ -34,10 +34,14 @@ class BloomFilter:
         return False
 
 
-if __name__ == '__main__':
+def main():
     b_filter = BloomFilter(100)
     print(len(b_filter.bit_array))
     b_filter.push("a")
     b_filter.push("b")
     exist = b_filter.is_exist("b")
     print(exist)
+
+
+if __name__ == '__main__':
+    main()

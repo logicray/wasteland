@@ -2,4 +2,4 @@ numpy=1.17.4
 torchvision
 torch
 sklearn
-tensorflow>1.12.1
+tensorflow=1.12.1

@@ -1,6 +1,6 @@
 ﻿#Mac OS X, Python3.5
 #_*_encoding=utf-8_*_
-#Author@LogicWang
+#Author@logic-pw
 #mangobada@163.com
 
 '''

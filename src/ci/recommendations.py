@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # _*_encoding=utf-8_*_
-#Author@ LogicWang
+#Author@ logic-pw
 #A dictionary of movie critics and their rating of a small set of movies
 
 from math import sqrt

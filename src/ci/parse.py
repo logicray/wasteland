@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-#Author LogicWang
+#Author logic-pw
 #logicwang@outlook.com   
 
 import string

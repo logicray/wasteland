@@ -8,7 +8,7 @@ import sys
 def remove_title():
     with open('./tangshi.txt') as f:
         for line in f:
-            if not('卷' in line and '_' in line):
+            if not ('卷' in line and '_' in line):
                 with open('new.txt', 'a') as f2:
                     f2.write(line)
                 # print line
@@ -30,8 +30,8 @@ def main():
     try:
         # remove_title()
         one_sentence_each_line()
-    except Exception, e:
-        print e
+    except Exception as e:
+        print(e)
         logging.exception(e)
         logging.exception('')
         sys.exit(2)
@@ -39,4 +39,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

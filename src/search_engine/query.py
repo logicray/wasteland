@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Author@LogicWang
+#Author@logic-pw
 #2015.12.10
 #mangobada@163.com
 '''

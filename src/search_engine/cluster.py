@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#LogicWang
+#logic-pw
 #2015.12.01
 #mangobada@163.com
 

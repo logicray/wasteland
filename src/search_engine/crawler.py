@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-#Author@LogicWang
+#Author@logic-pw
 #2015.12.10
 #mangobada@163.com
-'''
+
+"""
 this file include two class 
 crawler to download,parse pages, and then save to database
-'''
+"""
+
 from urllib import request, parse
 from bs4 import BeautifulSoup
 
