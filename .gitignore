@@ -13,6 +13,7 @@ bin-release/
 #idea IDE files
 .idea/
 data/
+model_dir/
 target/
 project/
 *.iml
