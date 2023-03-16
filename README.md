@@ -1,5 +1,5 @@
-# playground
+# wasteland
 a python project include 
-- algorithm and data structure implements
+- machine learning
 - deep learning
 - data visualization
