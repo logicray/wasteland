@@ -1,2 +1,0 @@
-# ci
-data mining programs

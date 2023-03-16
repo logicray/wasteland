@@ -21,6 +21,11 @@ import torch.nn as nn
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+<<<<<<< HEAD
+=======
+torch.device('cuda')
+torch.cuda.device('cuda')
+>>>>>>> ff15c53546a9b19e0c8fc7fc8a8a814b1e1de36e
 
 all_letters = string.ascii_letters + " .,;'"
 n_letters = len(all_letters)
@@ -118,8 +123,13 @@ def train(rnn: RNN, category_tensor, line_tensor, criterion, lr: float):
     hidden = torch.zeros(1, rnn.hidden_size)
     rnn.zero_grad()
     for i in range(line_tensor.size()[0]):
+<<<<<<< HEAD
         output, hidden = rnn(line_tensor[i], hidden)
     loss = criterion(output, category_tensor)
+=======
+        output, hidden = rnn(line_tensor[i], hidden.cuda())
+    loss = criterion(output, category_tensor.cuda())
+>>>>>>> ff15c53546a9b19e0c8fc7fc8a8a814b1e1de36e
     loss.backward()
 
     for p in rnn.parameters():
@@ -147,9 +157,16 @@ def train_epoch(all_categories, category_line):
     current_loss = 0
     all_losses = []
     rnn = RNN(n_letters, n_hidden, len(all_categories))
+<<<<<<< HEAD
     for i in range(1, n_iters + 1):
         category, line, category_tensor, line_tensor = random_training_example(all_categories, category_line)
         output, loss = train(rnn, category_tensor, line_tensor, criterion, lr=0.005)
+=======
+    rnn = rnn.cuda()
+    for i in range(1, n_iters + 1):
+        category, line, category_tensor, line_tensor = random_training_example(all_categories, category_line)
+        output, loss = train(rnn, category_tensor, line_tensor.cuda(), criterion, lr=0.005)
+>>>>>>> ff15c53546a9b19e0c8fc7fc8a8a814b1e1de36e
 
         if i % print_every == 0:
             guess, guess_i = category_from_output(output, all_categories)
@@ -247,6 +264,7 @@ def practice():
 
 def main():
     all_categories, category_line = load_data()
+<<<<<<< HEAD
     # model, loss_list = train_epoch(all_categories, category_line)
     # plotting_loss(loss_list)
     # print_confusion_matrix(model, all_categories, category_line)
@@ -255,6 +273,16 @@ def main():
 
     reload_model = torch.load('rnn_classify_model.pth')
     predict(reload_model, 'wang', all_categories)
+=======
+    model, loss_list = train_epoch(all_categories, category_line)
+    plotting_loss(loss_list)
+    print_confusion_matrix(model, all_categories, category_line)
+    # #
+    # torch.save(model, 'rnn_classify_model.pth')
+
+    #reload_model = torch.load('rnn_classify_model.pth')
+    predict(model, 'wang', all_categories)
+>>>>>>> ff15c53546a9b19e0c8fc7fc8a8a814b1e1de36e
 
 
 if __name__ == '__main__':
