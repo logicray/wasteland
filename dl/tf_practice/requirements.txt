@@ -1,0 +1,6 @@
+numpy==1.17.4
+scikit-learn
+# tensorflow=1.12.1
+tensorflow=1.15.4
+
+#Pillow~=7.0.0
