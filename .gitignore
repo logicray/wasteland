@@ -12,6 +12,7 @@ bin-release/
 
 #idea IDE files
 .idea/
+.vscode/
 data/
 model_dir/
 target/
