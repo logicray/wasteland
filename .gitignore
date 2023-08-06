@@ -15,6 +15,7 @@ bin-release/
 .vscode/
 data/
 out/
+output/
 model_dir/
 target/
 project/

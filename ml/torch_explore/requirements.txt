@@ -1,0 +1,5 @@
+tensorflow-gpu~=2.5.3
+
+numpy~=1.19.5
+torch~=1.10.2+cu113
+Pillow~=7.0.0
