@@ -10,30 +10,35 @@ bin-release/
 *.o
 *.out
 
-#idea IDE files
+# IDE files
 .idea/
 .vscode/
-data/
-out/
-output/
-model_dir/
-target/
-project/
 *.iml
+target/
+
+# operating system files
 .DS_Store
 .DS_Store?
 
-#python
+out/
+output/
+model_dir/
+model_save
+project/
+
+# python
 **/__pycache__/
 
 
-#data set 
+# data set 
 MNIST-data/
 inception5h.zip
+data/
 pilatus800.jpg
 tsne.png
 *.pb
 .ipynb_checkpoints
+.ipynb_checkpoints/
 
 # Executables
 *.swf
@@ -41,7 +46,4 @@ tsne.png
 *.ipa
 *.apk
 *.pydevproject
-
-
-.ipynb_checkpoints/
-model_save
+*.so

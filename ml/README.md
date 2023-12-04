@@ -1,5 +1,6 @@
 machine learning 
 
-## project intro
+## introduction
 - machine learning practice 
 - a tiny search engine
+- torch_explore
