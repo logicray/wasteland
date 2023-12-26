@@ -1,4 +1,4 @@
-## cpp algorithms and data structure implements
+## c/cpp algorithms and data structure implements
 - sort algorithms
 - primer search
 - stack and queue operate
