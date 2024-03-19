@@ -25,7 +25,7 @@ output/
 model_dir/
 model_save
 project/
-
+dist/
 # python
 **/__pycache__/
 
